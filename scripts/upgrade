@@ -39,7 +39,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="qBittorrent web UI" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Groceries list for families and shared households" --log="/var/log/$app/$app.log"
 
 ynh_config_add_logrotate
 

@@ -37,7 +37,6 @@ ram.runtime = "50M"
     default = "visitors"
 
     [install.password]
-    ask.en = "Choose a password"
     help.en = "This password will be used by all Koffan users"
     type = "password"
 
@@ -49,7 +48,7 @@ ram.runtime = "50M"
 
 [resources]
     [resources.go]
-    version = 1.21
+    version = "1.21"
 
     [resources.sources]
         [resources.sources.main]
