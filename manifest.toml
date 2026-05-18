@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "koffan"
 name = "Koffan"
-description.en = "Groceries list for families and shared households"
-description.fr = "Liste de courses pour familles et foyers partagés"
+description.en = "Groceries list for families and shared households."
+description.fr = "Liste de courses pour familles et foyers partagés."
 
 version = "2.11.0~ynh1"
 
