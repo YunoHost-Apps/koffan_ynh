@@ -17,6 +17,10 @@ Groceries list for families and shared households
 <a href="https://github.com/YunoHost-Apps/koffan_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
+
+## Screenshots
+![Screenshot of Koffan](./doc/screenshots/screenshot.png)
+
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/koffan)](https://ci-apps.yunohost.org/ci/apps/koffan/)
