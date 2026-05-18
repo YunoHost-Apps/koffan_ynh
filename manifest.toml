@@ -1,0 +1,64 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "koffan"
+name = "Koffan"
+description.en = "Groceries list for families and shared households"
+description.fr = "Liste de courses pour familles et foyers partagés"
+
+version = "2.11.0~ynh1"
+
+maintainers = ["guillaumelegoc"]
+
+[upstream]
+license = "MIT"
+code = "https://github.com/PanSalut/Koffan"
+
+[integration]
+yunohost = ">= 12.1.38"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.password]
+    ask.en = "Choose a password"
+    help.en = "This password will be used by all Koffan users"
+    type = "password"
+
+[resources]
+    [resources.go]
+    version = 1.21
+
+    [resources.sources]
+        [resources.sources.main]
+        in_subdir = false
+        url = "https://github.com/PanSalut/Koffan/archive/refs/tags/v2.11.0.tar.gz"
+        sha256 = "a4bb9af1869a91e49077340d3ff7db298fc7aec05960561a2e5a2b375afeb3de"
+        autoupdate.strategy = "latest_github_release"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
