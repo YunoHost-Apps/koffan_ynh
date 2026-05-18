@@ -41,6 +41,21 @@ ram.runtime = "50M"
     help.en = "This password will be used by all Koffan users"
     type = "password"
 
+    [install.language]
+    ask.en = "Choose the app language"
+    type = "string"
+    choices.en = "en"
+    choices.fr = "fr"
+    choices.es = "es"
+    choices.de = "de"
+    choices.pt = "pt"
+    choices.ru = "ru"
+    choices.uk = "uk"
+    choices.no = "no"
+    choices.lt = "lt"
+    choices.el = "el"
+    choices.sk = "sk"
+
 [resources]
     [resources.go]
     version = 1.21
