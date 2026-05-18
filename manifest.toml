@@ -45,6 +45,9 @@ ram.runtime = "50M"
     # [resources.go]
     # version = 1.21
 
+    [resources.apt]
+    packages = ["golang-go"]
+
     [resources.sources]
         [resources.sources.main]
         in_subdir = true
