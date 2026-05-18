@@ -43,18 +43,9 @@ ram.runtime = "50M"
 
     [install.language]
     ask.en = "Choose the app language"
+    help.en = "Choose from pl, en, de, es, fr, pt, uk, no, lt, el, sk, ru"
     type = "string"
-    choices.en = "en"
-    choices.fr = "fr"
-    choices.es = "es"
-    choices.de = "de"
-    choices.pt = "pt"
-    choices.ru = "ru"
-    choices.uk = "uk"
-    choices.no = "no"
-    choices.lt = "lt"
-    choices.el = "el"
-    choices.sk = "sk"
+    default="en"
 
 [resources]
     [resources.go]
