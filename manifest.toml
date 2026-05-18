@@ -47,7 +47,7 @@ ram.runtime = "50M"
 
     [resources.sources]
         [resources.sources.main]
-        in_subdir = false
+        in_subdir = true
         url = "https://github.com/PanSalut/Koffan/archive/refs/tags/v2.11.0.tar.gz"
         sha256 = "a4bb9af1869a91e49077340d3ff7db298fc7aec05960561a2e5a2b375afeb3de"
         autoupdate.strategy = "latest_github_release"
