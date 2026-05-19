@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "koffan"
 name = "Koffan"
-description.en = "Groceries list for families and shared households"
-description.fr = "Liste de courses pour familles et foyers partagés"
+description.en = "Groceries list for families and shared households."
+description.fr = "Liste de courses pour familles et foyers partagés."
 
 version = "2.11.0~ynh1"
 
@@ -47,9 +47,6 @@ ram.runtime = "50M"
     default="en"
 
 [resources]
-    [resources.go]
-    version = "1.21"
-
     [resources.sources]
         [resources.sources.main]
         in_subdir = true
@@ -67,3 +64,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+
+    [resources.go]
+    version = "1.21"
