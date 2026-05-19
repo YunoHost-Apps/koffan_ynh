@@ -7,6 +7,10 @@
 source /usr/share/yunohost/helpers
 
 key=$(ynh_string_random --length=32)
+ynh_app_setting_set --key=key --value="$key"
+
+# Not saved by default
+ynh_app_setting_set --key=password --value="$password"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE

@@ -47,9 +47,6 @@ ram.runtime = "50M"
     default="en"
 
 [resources]
-    [resources.go]
-    version = "1.21"
-
     [resources.sources]
         [resources.sources.main]
         in_subdir = true
@@ -67,3 +64,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+
+    [resources.go]
+    version = "1.21"
