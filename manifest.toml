@@ -7,7 +7,7 @@ name = "Koffan"
 description.en = "Groceries list for families and shared households."
 description.fr = "Liste de courses pour familles et foyers partagés."
 
-version = "2.12.3~ynh1"
+version = "2.13.0~ynh1"
 
 maintainers = ["guillaumelegoc"]
 
@@ -50,8 +50,8 @@ ram.runtime = "50M"
     [resources.sources]
         [resources.sources.main]
         in_subdir = true
-        url = "https://github.com/PanSalut/Koffan/archive/refs/tags/v2.12.3.tar.gz"
-        sha256 = "455b292a5b708537e8c3db2e9e2154549eb08a27f5ffb6ad997950d5f5dcce9c"
+        url = "https://github.com/PanSalut/Koffan/archive/refs/tags/v2.13.0.tar.gz"
+        sha256 = "18d544b3099143fb116c4204056a6ae667f0d92a40d643ca0b056214716c9f4d"
         autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
