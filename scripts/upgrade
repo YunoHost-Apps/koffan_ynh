@@ -49,7 +49,7 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service="$app" --action="start" --log_path="/var/log/$app/$app.log" --wait_until="bound on host"
 
 #=================================================
 # END OF SCRIPT
