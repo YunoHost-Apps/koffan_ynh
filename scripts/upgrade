@@ -21,7 +21,7 @@ ynh_script_progression "Upgrading source files..."
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env "
 
 ynh_setup_source --dest_dir="$install_dir"
-ynh_hide_warnings ynh_exec_as_app go build -C "$install_dir"
+ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=1 go build -C "$install_dir"
 chmod +x "$install_dir/shopping-list"
 
 #=================================================
@@ -49,7 +49,7 @@ ynh_config_add_logrotate
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --service="$app" --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service="$app" --action="start" --log_path="/var/log/$app/$app.log" --wait_until="bound on host"
 
 #=================================================
 # END OF SCRIPT
